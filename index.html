@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions</title>
+</head>
+<body>
+   
+    <fieldset>
+        <fieldset>
+            <legend>Question 1</legend>
+        Create one function with zero parameter having a console statement.
+        </fieldset>
+        <fieldset>
+            <legend>Solution</legend>
+            <pre>
+        function Hello(){ //created a function with no parameters, named as Hello()
+            console.log("Hello Shruthi");
+        }
+        
+        //function call from main program
+        Hello(); // Hello Shruthi
+        </pre>
+        </fieldset>
+    </fieldset>
+    <fieldset>
+        <fieldset>
+            <legend>Question 2</legend>
+            Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7".
+        </fieldset>
+        <fieldset>
+            <legend>Solution</legend>
+            <pre>
+        function Add(num1, num2){ //created a function with two parameters, named as Add()
+            console.log(`Sum of ${num1} and ${num2} is ${num1+num2}`);
+        }
+        
+        //function call from main program
+        Add(3, 4); // Sum of 3 and 4 is 7
+        </pre>
+        </fieldset>
+
+    </fieldset>
+    <fieldset>
+            <legend>Question 3</legend>
+        Create one arrow function.
+        </fieldset>
+        <fieldset>
+            <legend>Solution</legend>
+            <pre>
+        arrow = () =>{
+            console.log("Hello, I am an arrow function..");
+            }
+        arrow(); //Hello, I am an arrow function..
+            </pre>
+        </fieldset>
+    </fieldset>
+    <fieldset>
+    <fieldset>
+        <legend>Question 4</legend>
+        <pre>
+        "Print output: 
+        var x = 21;
+        var girl = function () {
+            console.log(x);
+            var x = 20;
+        };
+        girl ();"
+        </pre>  
+        </fieldset>
+        <fieldset>
+        <legend>Solution</legend>
+        <pre>
+        var x = 21; //global
+            var girl = function () { //girl(function)
+            console.log(x); //consoling variable brfore declaration throws error undefined
+            var x = 20;
+        };
+        girl (); //undefined
+
+        <h3>output</h3>
+            undefined</pre>
+        </fieldset>
+</fieldset> 
+<fieldset>
+    <fieldset>
+        <legend>Question 5</legend>
+        <pre>
+        "Print output: 
+        var x = 21; //global
+        girl (); //undefined
+        console.log(x) //21
+        function girl() {
+            console.log(x);
+            var x = 20;
+        };"
+    </pre>
+    </fieldset>
+    <fieldset>
+        <legend>Solution</legend>
+        <pre>
+        var x = 21; //global
+        girl (); //undefined
+        console.log(x) //21
+        function girl() {
+            console.log(x);
+            var x = 20;
+        };
+
+        <h3>output</h3>
+
+        undefined <br>
+        21
+    </pre>
+    </fieldset>
+</fieldset> 
+<fieldset>
+    <fieldset>
+        <legend>Question 6</legend>
+        <pre>
+        "Print output
+
+        var x = 21;
+        a();
+        b();
+        
+            function a() {
+            
+            x = 20;
+            console.log(x);
+        };
+            function b() {
+            
+            x = 40;
+            console.log(x);
+        };"
+    </pre>
+    </fieldset>
+    <fieldset>
+        <legend>Solution</legend>
+        <pre>
+        var x = 21;
+        a(); //20
+        b(); //40
+        
+            function a() {
+            
+            x = 20;
+            console.log(x);
+        };
+            function b() {
+            
+            x = 40;
+            console.log(x);
+        };
+
+        <h3>output</h3>
+
+        20 <br>
+        40
+    </pre>
+    </fieldset>
+</fieldset> 
+<fieldset>
+    <fieldset>
+        <legend>Question 7</legend>
+        Write a function that accepts parameter n and returns factorial of n
+    </fieldset>
+    <fieldset>
+        <legend>Solution</legend>
+        <pre>
+        Factorial=(n)=>{
+            let factorial=1;
+            for(let i=1; i<=n; i++)
+            {
+            factorial*= i;
+            }
+            return factorial;
+        }
+        console.log(Factorial(10));
+
+        <h3>output</h3>
+
+        3628800
+        </pre>
+    </fieldset>
+</fieldset>
+
+
+<script src="index.js"></script>
+</body>
+</html>
